@@ -1,5 +1,6 @@
 var i = 0;
 var responseList = ['yes', 'no', 'seven']
+var picked_answer;
 
 
 function setup() {
@@ -10,9 +11,14 @@ function setup() {
   submit = select("#submit");
   //submit.mousePressed(processAcronymI);
   //submit.mousePressed(greet);
+  picked_answer = random(responseList);
 
 
 }
+
+
+
+
 
 function draw() {
     console.log(i);
@@ -35,11 +41,14 @@ function draw() {
     }
 
 
+
     //second part of the animation
     if (i > width+14) {
         textSize(50);
         textAlign(CENTER, CENTER)
-        text('Great Acronym', width/2, height/2);
+        //var copy_for_win = picked_answer + " " + s;
+        text(s + " ?", width/2, height * .25);
+        text(picked_answer, width/2, height * .75);
     }
 
 }
