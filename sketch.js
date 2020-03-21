@@ -35,7 +35,7 @@ function draw() {
     //first part of the animation. moving the word across the screen
     if (i > 0  && i < width + 15) {
         fill('#E0E0E0');
-        rect(0, 0, width, height);
+        rect(-5, -5, width + 10, height + 10);
 
         fill('#000000');
         text(s, i, height/2);
