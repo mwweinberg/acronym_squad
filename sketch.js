@@ -6,12 +6,16 @@ var picked_answer;
 function setup() {
   createCanvas(800, 400);
 
+
   textfield = select("#input");
   output = select('#output');
   submit = select("#submit");
   //submit.mousePressed(processAcronymI);
   //submit.mousePressed(greet);
   picked_answer = random(responseList);
+
+
+
 
 
 }
@@ -26,10 +30,14 @@ function draw() {
     // sets i to 1, which triggers everything
     submit.mousePressed(advance);
 
+    textFont('Alegreya Sans');
+
     //first part of the animation. moving the word across the screen
     if (i > 0  && i < width + 15) {
+        fill('#E0E0E0');
         rect(0, 0, width, height);
 
+        fill('#000000');
         text(s, i, height/2);
         i = i + 2;
 

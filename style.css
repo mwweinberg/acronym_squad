@@ -1,7 +1,38 @@
 html, body {
-  margin: 0;
-  padding: 0;
+height: 100%;
 }
+
 canvas {
-  display: block;
+    margin: 0;
+    display: flex;
+
+    /* This centers our sketch horizontally. */
+    justify-content: center;
+
+    /* This centers our sketch vertically. */
+    align-items: center;
 }
+
+h1 {
+
+    font-family: 'Alegreya Sans';
+
+}
+
+h3 {
+    font-family: 'Alegreya Sans';
+}
+
+* {
+    background-color: #E0E0E0;
+
+}
+
+button {
+    font-family: 'Alfa Slab One';
+    border-radius: 8px;
+    background-color: #4CAF50;
+    font-size: 16px;
+    font-weight: 900;
+}
+
