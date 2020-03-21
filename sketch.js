@@ -35,6 +35,7 @@ function draw() {
     //first part of the animation. moving the word across the screen
     if (i > 0  && i < width + 15) {
         fill('#E0E0E0');
+        textSize(height * 0.1);
         rect(-5, -5, width + 10, height + 10);
 
         fill('#000000');
@@ -61,77 +62,7 @@ function draw() {
 
 }
 
+//this is the function called when the button is pressed
 function advance() {
     i = 1
 }
-
-// function draw() {
-//   background(220);
-//
-//   var s = textfield.value();
-//
-//
-//   text(s, i, height/2);
-//   i++;
-//
-//   if (i > width) {
-//       var answer = random(responseList) + " big";
-//       var printText = answer;
-//       text('big', 50, 50);
-//   }
-// }
-
-// if mouseclick
-    //i = 1
-//if i < width
-    //run the word across the screen
-    //i++
-//if i > width
-    //write the text
-
-function processAcronymI(){
-
-}
-
-// function processAcronym() {
-//
-//     var s = textfield.value();
-//
-//     for (let i = 0; i < width; i++) {
-//         text(s, i, height/2);
-//         rect(0, 0, width, height);
-//         sleep(2000);
-//
-//
-//
-//     }
-//
-//
-//     //writes the contents of s after the canvas
-//     // var answer = random(responseList) + " " + s
-//     // createP(answer);
-//     //
-//     // for (let i = 0; i < 200; i++) {
-//     //     push();
-//     //     fill(random(255), 255, 255);
-//     //     translate(random(width), random(height));
-//     //     rotate(random(2 * PI));
-//     //     text(s, 0, 0);
-//     //     pop();
-//     // }
-//
-// }
-//
-// // function greet() {
-// //     const name = textfield.value();
-// //     //greeting.html(name);
-// //
-// //     for (let i = 0; i < 200; i++) {
-// //         push();
-// //         fill(random(255), 255, 255);
-// //         translate(random(width), random(height));
-// //         rotate(random(2 * PI));
-// //         text(name, 0, 0);
-// //         pop();
-// //     }
-// // }
