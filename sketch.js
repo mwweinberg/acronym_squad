@@ -26,7 +26,7 @@ function setup() {
 
 function draw() {
     console.log(i);
-    var s = textfield.value();
+    var s = textfield.value().toUpperCase();;
     // sets i to 1, which triggers everything
     submit.mousePressed(advance);
 
