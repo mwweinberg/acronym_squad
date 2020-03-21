@@ -1,10 +1,10 @@
 var i = 0;
-var responseList = ['yes', 'no', 'seven']
+var responseList = ['Acronym Squad Approved!', 'Fantastic Choice', 'Another Winner', 'You Are Great at This']
 var picked_answer;
 
 
 function setup() {
-  createCanvas(400, 400);
+  createCanvas(800, 400);
 
   textfield = select("#input");
   output = select('#output');
@@ -31,7 +31,7 @@ function draw() {
         rect(0, 0, width, height);
 
         text(s, i, height/2);
-        i++;
+        i = i + 2;
 
         //background(55);
     }
@@ -47,7 +47,7 @@ function draw() {
         textSize(50);
         textAlign(CENTER, CENTER)
         //var copy_for_win = picked_answer + " " + s;
-        text(s + " ?", width/2, height * .25);
+        text(s + "?", width/2, height * .25);
         text(picked_answer, width/2, height * .75);
     }
 
