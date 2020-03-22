@@ -7,10 +7,10 @@ canvas {
     display: flex;
 
     /* This centers our sketch horizontally. */
-    justify-content: center;
+    /* justify-content: center; */
 
     /* This centers our sketch vertically. */
-    align-items: center;
+    /* align-items: center; */
 }
 
 h1 {
@@ -25,6 +25,7 @@ h3 {
 
 * {
     background-color: #E0E0E0;
+    text-align: center;
 
 }
 

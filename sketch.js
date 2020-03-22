@@ -1,10 +1,27 @@
 var i = 0;
-var responseList = ['Acronym Squad Approved!', 'Fantastic Choice', 'Another Winner', 'You Are Great at This']
+var responseList = ['Acronym Squad Approved!', 'Fantastic Choice', 'A Real Winner', 'You Are Great at This', 'You\'re Always Full of Good Ideas', 'Meh, It\'ll Work', 'Seriously, We\'re So Proud of You', "You're an Unheralded Genius", 'Wearing Your Smart Pants Today, We See', "If We Were Hiring We'd Hire You", ]
 var picked_answer;
+
+//these variable & functions are for centering the canvas
+var cnv;
+function centerCanvas() {
+  var x = (windowWidth - width) / 2;
+  //var y = (windowHeight - height) / 2;
+  //you want the y to be low enough that the canvas does not cover the button
+  var y = 300;
+  cnv.position(x, y);
+}
+function windowResized() {
+  centerCanvas();
+}
 
 
 function setup() {
-  createCanvas(800, 400);
+  //createCanvas(800, 400);
+  //makes the canvas slightly smaller than the windown widht
+  //the windowResized() function revises the canvas if the window is resized
+  cnv = createCanvas(windowWidth - 50, 400);
+  centerCanvas();
 
 
   textfield = select("#input");
@@ -14,14 +31,13 @@ function setup() {
   //submit.mousePressed(greet);
   picked_answer = random(responseList);
 
-
-
-
-
 }
 
 
 
+// function windowResized() {
+//   resizeCanvas(windowWidth - 50, 400);
+// }
 
 
 function draw() {
@@ -40,7 +56,8 @@ function draw() {
 
         fill('#000000');
         text(s, i, height/2);
-        i = i + 2;
+        //controls the  speed the text moves across the page
+        i = i + 3;
 
         //background(55);
     }
