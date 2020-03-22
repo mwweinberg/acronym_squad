@@ -41,7 +41,7 @@ function setup() {
 
 
 function draw() {
-    console.log(i);
+    //console.log(i);
     var s = textfield.value().toUpperCase();;
     // sets i to 1, which triggers everything
     submit.mousePressed(advance);
@@ -57,13 +57,29 @@ function draw() {
         fill('#000000');
         text(s, i, height/2);
         //controls the  speed the text moves across the page
+        //update the 'processing' animation below if you change  it 
         i = i + 3;
 
         //background(55);
     }
-
+    //all of this foolishness is to make the little animation after the word processing
+    //since i is advancing by three each time it does a % on i to get one of three results
+    //if you change the step you will have to change the # it is divided by (from 9 as of this writing)
     if  (i > 0 && i < width + 15) {
-        text('processing...', 50, 50);
+        console.log(i);
+        if ((i-1) % 9 == 0) {
+            text('processing <  ', 50, 50);
+        }
+        if ((i-1) % 9 == 3) {
+            text('processing    - ', 50, 50);
+        }
+        if ((i-1) % 9 == 6) {
+            text('processing     >', 50, 50);
+        }
+        else {
+            text('processing', 50, 50);
+        }
+        console.log(i % 3);
     }
 
 
