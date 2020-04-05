@@ -8,7 +8,7 @@ function centerCanvas() {
   var x = (windowWidth - width) / 2;
   //var y = (windowHeight - height) / 2;
   //you want the y to be low enough that the canvas does not cover the button
-  var y = 300;
+  var y = 450;
   cnv.position(x, y);
 }
 function windowResized() {
@@ -89,8 +89,9 @@ function draw() {
         textSize(50);
         textAlign(CENTER, CENTER)
         //var copy_for_win = picked_answer + " " + s;
-        text(s + "?", width/2, height * .25);
+        text(s + "?", width/2, 50);
         text(picked_answer, width/2, height * .75);
+
     }
 
 }
