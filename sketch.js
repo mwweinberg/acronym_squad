@@ -1,5 +1,5 @@
 var i = 0;
-var responseList = ['Acronym Squad Approved!', 'Fantastic Choice', 'A Real Winner', 'You Are Great at This', 'You\'re Always Full of Good Ideas', 'Meh, It\'ll Work', 'Seriously, We\'re So Proud of You', "You're an Unheralded Genius", 'Wearing Your Smart Pants Today, We See', "If We Were Hiring We'd Hire You", "This has been assessed for AcronymQuality&reg", "So many letters!", "A OK", "Take it to the bank!", "Acronym Squad Approved", "The Acronym Squad is in awe of your Acronym Prowess" ]
+var responseList = ['Acronym Squad Approved!', 'Fantastic Choice', 'A Real Winner', 'You Are Great at This', 'You\'re Always Full of Good Ideas', 'Meh, It\'ll Work', 'Seriously, We\'re So Proud of You', "You're an Unheralded Genius", 'Wearing Your Smart Pants Today, We See', "If We Were Hiring We'd Hire You", "This has been assessed for AcronymQuality\xAE", "So many letters!", "A OK", "Take it to the bank!", "Acronym Squad Approved", "The Acronym Squad is in awe of your Acronym Prowess" ]
 var picked_answer;
 
 //these variable & functions are for centering the canvas
